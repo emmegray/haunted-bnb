@@ -1,0 +1,29 @@
+{
+  "root": true,
+  "project": {
+    "name": "haunted-bnb"
+  },
+  "api": {
+    "projectId": "8yy4j5l1",
+    "dataset": "haunted-bnb-dataset"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    }
+  ]
+}
